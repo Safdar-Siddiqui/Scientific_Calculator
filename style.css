@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+
+}
+
+.calculator {
+    background: #2f89bd;
+    padding: 20px;
+    box-shadow: 0px 3px 10px #262626;
+    border: 3px solid #163e55;
+    border-radius: 7px;
+    /* border-top-color: #1c5170; */
+    /* border-top-color: #1c506e;
+    border-right-color: #1c506e;
+    border-bottom-color: #1c506e;
+    border-left-color:#1c506e; */
+}
+
+#scr {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    box-shadow: inset 2px 2px 3px grey;
+    font-size: 20px;
+    padding-inline: 5px;
+    margin-bottom: 8px;
+    outline: none;
+    border: none;
+}
+
+.buttons, .sciBtns, .numBtns {
+    width: 100%;
+}
+
+.clrBtns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row button{
+    margin-inline: 2px;
+}
+
+
+#acBtn,
+#delBtn {
+    background-color: #ac0909;
+    color: white;
+    box-shadow: inset 3px 2px 3px #fff,
+                inset -3px -2px 3px black;
+}
+
+
+
+
+button {
+    height: 40px;
+    width: 70px;
+    font-size: 16px;
+    margin-block: 2px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 3px 2px 3px #fff, inset -3px -2px 3px #000;
+}
+
+
+
+
+#equalBtn {
+    background-color: #0a8610;
+    color: white;
+    box-shadow: inset 3px 2px 3px #fff, inset -3px -2px 3px #000;
+
+
+}
+
+span {
+    font-size: 12px;
+    position: relative;
+    bottom: 6px;
+}
+
+
+.sciBtns button {
+    /* background-color: #000000;*/
+    background-color: #4f4f4f;
+    color: white;
+    box-shadow: inset 3px 2px 3px #fff, inset -3px -2px 3px black;
+}
+
+.numBtns button {
+    background-color: #969696;
+    color: white;
+}
+
+
+
+/* button:hover,
+#acBtn:hover,
+#delBtn:hover,
+#equalBtn:hover {
+    transform: scale(0.96);
+    transform: translate3d(1px, 1px, 1px);
+    box-shadow: inset 3px 2px 3px #000, inset -3px -2px 3px #fff;
+} */
+
+button:active,
+#acBtn:active,
+#delBtn:active,
+#equalBtn:active {
+    /* transform: scale(0.96); */
+    /* transform: translate3d(2px, 2px, 2px); */
+    box-shadow: inset 3px 2px 3px #000, inset -3px -2px 3px #fff;
+}
+
+
+
+
+@media screen and (max-width:350px) {
+    button {
+        height: 35px;
+        width: 60px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    button {
+        height: 30px;
+        width: 60px;
+
+    }
+
+}
+
+@media screen and (max-width:310px) {
+    button {
+        height: 30px;
+        width: 58.4px;
+        justify-content: center;
+    }
+
+}
